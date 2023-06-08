@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jaya Foods offers delicious South Indian cuisine. Check back soon for our menu!">
+  <title>Jaya Foods - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/top-bar.css">  
+  <link rel="stylesheet" href="css/logo-pane.css">
+  <link rel="stylesheet" href="css/text-menu.css">
+  <link rel="stylesheet" href="css/photo-menu.css">
+  <link rel="stylesheet" href="css/intro-pane.css">
+  <link rel="stylesheet" href="css/shopping.css">
+</head>
+<body>
+  <div class="top-bar" role="navigation">
+    <div class="menu-options">
+      <a href="index.html" class="localizable lang-en" aria-label="Home">Home</a>
+      <a href="index.html" class="localizable lang-te" aria-label="ముఖ్య పేజీ">ముఖ్య పేజీ</a>
+      <a href="contact.html" class="localizable lang-en" aria-label="Contact">Contact</a>
+      <a href="contact.html" class="localizable lang-te" aria-label="సంప్రదింపు">సంప్రదింపు</a>
+    </div>
+
+    <div class="language-dropdown">
+      <label for="language">
+        <span class="localizable lang-en">Language</span>
+        <span class="localizable lang-te">భాష</span>:
+      </label>
+      <select id="language" aria-label="Language selection">
+        <option value="en">English</option>
+        <option value="te">తెలుగు</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="container-logo">
+    <div class="outer-circle"></div>
+      <h1 class="logo">Jaya Foods</h1>
+  </div>
+  
+  <div class="shopping-list-container" id="shopping-list">
+    <div class="shopping-list-topbar">
+      <h2 class="shopping-list-title">Shopping List</h2>
+      <div class="toolbar">
+        <button id="copy-button">Copy</button>
+        <button id="clear-button">Clear</button>
+      </div>
+    </div>
+    <div id="shopping-list-items"> <!-- New container for items -->
+      <ul></ul>
+    </div>
+  </div>
+
+  <div class="intro-pane container" id="intro-pane" role="main" aria-label="Introduction">
+    <h3>
+      <span class="localizable lang-en">Catering Delicious South Indian Food!</span>
+      <span class="localizable lang-te">నోరూరించే దక్షిణ భారత వంటకాలు!</span>
+    </h3>
+      <span class="localizable lang-en">More <strong>details</strong> are coming <strong>soon!</strong></span><br>
+      <span class="localizable lang-te">మరన్ని వివిరాలు <strong>త్వరలో</strong>!</span><br>
+  </div>
+
+  <div class="text-menu container" id="text-menu" role="region" aria-label="Text-based Menu">
+    <!-- Text based menu cards load here -->
+  </div>
+
+  <div class="main-pane container" id="main-pane" role="main" aria-label="Menu Cards">
+    <!-- photo based menu cards load here -->    
+  </div>
+
+  <script src="js/menus.js"></script>
+</body>
+</html>

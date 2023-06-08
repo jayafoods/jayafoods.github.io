@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Jaya Foods for delicious South Indian cuisine.">
+  <title>Jaya Foods - Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/top-bar.css">
+  <link rel="stylesheet" href="css/photo-menu.css">
+  <script src="js/contact-lang-switch.js"></script>
+</head>
+<body onload="loadLanguage(localStorage.getItem('selectedLanguage') || 'en')">
+  <div class="top-bar">
+    <div class="menu-options">
+      <a href="index.html" class="localizable lang-en" aria-label="Home">Home</a>
+      <a href="index.html" class="localizable lang-te" aria-label="ముఖ్య పేజీ">ముఖ్య పేజీ</a>
+      <a href="contact.html" class="localizable lang-en" aria-label="Contact">Contact</a>
+      <a href="contact.html" class="localizable lang-te" aria-label="సంప్రదింపు">సంప్రదింపు</a>
+    </div>
+
+    <div class="language-dropdown">
+      <label for="language">
+        <span class="localizable lang-en">Language</span>
+        <span class="localizable lang-te">భాష</span>:
+      </label>
+      <select id="language" aria-label="Language selection">
+        <option value="en">English</option>
+        <option value="te">తెలుగు</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="intro-pane" id="main-pane">
+    <h2>
+      <span class="localizable lang-en">Contact Information</span>
+      <span class="localizable lang-te">సంప్రదింపు సమాచారం</span>
+    </h2>
+
+    <p>
+      <span class="localizable lang-en">Jaya Foods</span>
+      <span class="localizable lang-te">జయ ఫుడ్స్</span>
+    </p>
+
+    <p>
+      <span class="localizable lang-en">Email: jayafoods@example.com</span>
+      <span class="localizable lang-te">ఇమెయిల్: jayafoods@example.com</span>
+    </p>
+
+    <p>
+      <span class="localizable lang-en">Phone: +1-800-123-4567</span>
+      <span class="localizable lang-te">ఫోన్: +1-800-123-4567</span>
+    </p>
+  </div>
+</body>
+</html>

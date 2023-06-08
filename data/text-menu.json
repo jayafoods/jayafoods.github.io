@@ -1,0 +1,201 @@
+{
+  "Category1": {
+    "en": {
+      "title": "Starters",
+      "items": [
+        { "name": "Gaarelu", "spiciness": 0 },
+        { "name": "Poornaalu", "spiciness": 0 },
+        { "name": "Masala vada", "spiciness": 0 },
+        { "name": "Mirchi Bajji", "spiciness": 2 },
+        { "name": "Spinach onion Pakoda", "spiciness": 0 },
+        { "name": "Gobi Manchuria", "spiciness": 0 },
+        { "name": "Veg Manchuria", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "స్టార్టర్లు",
+      "items": [
+        { "name": "గారెలు", "spiciness": 0 },
+        { "name": "పూర్ణాలు", "spiciness": 0 },
+        { "name": "మసాలా వడ", "spiciness": 0 },
+        { "name": "మిరపకాయ బజ్జి", "spiciness": 2 },
+        { "name": "పాలకూర ఉల్లిపాయ పకోడి", "spiciness": 0 },
+        { "name": "గోబి మంచూరియా", "spiciness": 0 },
+        { "name": "వెజ్ మంచూరియా", "spiciness": 0 }
+      ]
+    }
+  },
+  "Category2": {
+    "en": {
+      "title": "Rice items",
+      "items": [
+        { "name": "Vegetable Biryani", "spiciness": 0 },
+        { "name": "Mushroom Biryani", "spiciness": 0 },
+        { "name": "Coconut Rice", "spiciness": 0 },
+        { "name": "Tamarind Rice", "spiciness": 0 },
+        { "name": "Veg Fried Rice", "spiciness": 0 },
+        { "name": "Curd Rice", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "అన్నాలు",
+      "items": [
+        { "name": "వెజిటబుల్ బిర్యాని", "spiciness": 0 },
+        { "name": "మష్రూమ్ బిర్యాని", "spiciness": 0 },
+        { "name": "కొబ్బరి అన్నం", "spiciness": 0 },
+        { "name": "చింతపండు అన్నం", "spiciness": 0 },
+        { "name": "గుడ్డు ఫ్రైడ్ రైస్", "spiciness": 0 },
+        { "name": "వెజ్ ఫ్రైడ్ రైస్", "spiciness": 0 },
+        { "name": "పెరుగు అన్నం", "spiciness": 0 }
+      ]
+    }
+  },
+  "Category3": {
+    "en": {
+      "title": "Fry Items",
+      "items": [
+        { "name": "Bhendi coconut fry", "spiciness": 0 },
+        { "name": "Bhendi Pakodi", "spiciness": 0 },
+        { "name": "Dondakaya Pakodi", "spiciness": 0 },
+        { "name": "Dondakaya coconut fry", "spiciness": 0 },
+        { "name": "Chamadumpa coconut fry", "spiciness": 0 },
+        { "name": "Soyachunks greenpeas fry", "spiciness": 0 },
+        { "name": "Cauliflower Potato fry", "spiciness": 0 },
+        { "name": "Beans Carrot Peas fry", "spiciness": 0 },
+        { "name": "Mixed vegetables fry", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "వేపుళ్లు",
+      "items": [
+        { "name": "బెండకాయ కొబ్బరి వేపుడు", "spiciness": 0 },
+        { "name": "బెండకాయ పకోడి", "spiciness": 0 },
+        { "name": "దొండకాయ పకోడి", "spiciness": 0 },
+        { "name": "దొండకాయ కొబ్బరి వేపుడు", "spiciness": 0 },
+        { "name": "చామదుంప కొబ్బరి వేపుడు", "spiciness": 0 },
+        { "name": "సోయా చంక్స్ పచ్చ బఠాని వేపుడు", "spiciness": 0 },
+        { "name": "గోబీ బంగాళాదుంప వేపుడు", "spiciness": 0 },
+        { "name": "బీన్స్ క్యారెట్ బఠాని వేపుడు", "spiciness": 0 },
+        { "name": "మిక్స్ వెజిటబుల్స్ వేపుడు", "spiciness": 0 }
+      ]
+    }
+  },
+  "Category4": {
+    "en": {
+      "title": "Gravy Items",
+      "items": [
+        { "name": "Paneer Butter Masala", "spiciness": 0 },
+        { "name": "Mushroom", "spiciness": 0 },
+        { "name": "Gutti vankaya", "spiciness": 0 },
+        { "name": "Tomato Cashew Drumstick", "spiciness": 0 },
+        { "name": "Chana Masala", "spiciness": 0 },
+        { "name": "Kadai Pannner Masala", "spiciness": 0 },
+        { "name": "Kadai Vegetables", "spiciness": 0 },
+        { "name": "Mixed vegetable", "spiciness": 0 },
+        { "name": "Potato kurma", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "పులుసులు",
+      "items": [
+        { "name": "పనీర్ బటర్ మసాలా", "spiciness": 0 },
+        { "name": "మష్రూమ్", "spiciness": 0 },
+        { "name": "గుత్తి వంకాయ", "spiciness": 0 },
+        { "name": "టమాటో కాజూ ములకాయ", "spiciness": 0 },
+        { "name": "చనా మసాలా", "spiciness": 0 },
+        { "name": "కడాయి పనీర్ మసాలా", "spiciness": 0 },
+        { "name": "కడాయి కూరగాయలు", "spiciness": 0 },
+        { "name": "మిక్స్ వెజిటబుల్", "spiciness": 0 },
+        { "name": "బంగాళాదుంప కుర్మా", "spiciness": 0 }
+      ]
+    }
+  },
+  "Category5": {
+    "en": {
+      "title": "Sweets",
+      "items": [
+        { "name": "Bobbatlu (Puran poli)", "spiciness": 0 },
+        { "name": "Pineapple Kesari", "spiciness": 0 },
+        { "name": "Carrot Halwa", "spiciness": 0 },
+        { "name": "Gulab Jamoon", "spiciness": 0 },
+        { "name": "Bread Halwa", "spiciness": 0 },
+        { "name": "Badam burfi", "spiciness": 0 },
+        { "name": "Mango delight", "spiciness": 0 },
+        { "name": "Soft Mysorepak", "spiciness": 0 },
+        { "name": "Kaju katli", "spiciness": 0 },
+        { "name": "Pala taalikalu", "spiciness": 0 },
+        { "name": "Gulab Jamoon", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "మిఠాయిలు",
+      "items": [
+        { "name": "బొబ్బట్లు (పూరన్ పోలి)", "spiciness": 0 },
+        { "name": "పైనాపిల్ కేసరి", "spiciness": 0 },
+        { "name": "క్యారెట్ హల్వా", "spiciness": 0 },
+        { "name": "గులాబ్ జామూన్", "spiciness": 0 },
+        { "name": "బ్రెడ్ హల్వా", "spiciness": 0 },
+        { "name": "బాదాం బర్ఫీ", "spiciness": 0 },
+        { "name": "మామిడి డిలైట్", "spiciness": 0 },
+        { "name": "మైసూర్ పాక్", "spiciness": 0 },
+        { "name": "కాజూ కట్లీ", "spiciness": 0 },
+        { "name": "పాల తాలికలు", "spiciness": 0 },
+        { "name": "గులాబ్ జామూన్", "spiciness": 0 }
+      ]
+    }
+  },
+  "Category6": {
+    "en": {
+      "title": "Chutneys",
+      "items": [
+        { "name": "Cauliflower pickle", "spiciness": 1 },
+        { "name": "Dosakaya Vankaya pachadi", "spiciness": 1 },
+        { "name": "Beerakaya Tomato chutney", "spiciness": 1 },
+        { "name": "Potlakaya perugu pachadi", "spiciness": 0 },
+        { "name": "Vankaya Tomato chutney", "spiciness": 1 },
+        { "name": "Tomato Podina chutney", "spiciness": 1 },
+        { "name": "Vankaya Ullipaya Pachadi", "spiciness": 1 }
+      ]
+    },
+    "te": {
+      "title": "పచ్చళ్ళు",
+      "items": [
+        { "name": "కాలిఫ్లవర్ పచ్చడి", "spiciness": 1 },
+        { "name": "దోసకాయ వంకాయ పచ్చడి", "spiciness": 1 },
+        { "name": "బీరకాయ టమాటో పచ్చడి", "spiciness": 1 },
+        { "name": "పొట్లకాయ పెరుగు పచ్చడి", "spiciness": 0 },
+        { "name": "వంకాయ టమాటో పచ్చడి", "spiciness": 1 },
+        { "name": "టమాటో పుదీనా పచ్చడి", "spiciness": 1 },
+        { "name": "వంకాయ ఉల్లిపాయ పచ్చడి", "spiciness": 1 }
+      ]
+    }
+  },
+  "Category7": {
+    "en": {
+      "title": "Breakfast",
+      "items": [
+        { "name": "Masala dosa & chutney, sambar", "spiciness": 0 },
+        { "name": "Onion dosa & chutney, sambar", "spiciness": 0 },
+        { "name": "Medu Vada & chutney, sambar", "spiciness": 0 },
+        { "name": "Idly with chutney & sambar", "spiciness": 0 },
+        { "name": "Masala Vada", "spiciness": 0 },
+        { "name": "Pongal with sambar", "spiciness": 0 },
+        { "name": "Cashew Bombay rava Upma", "spiciness": 0 },
+        { "name": "Poori with Alu Curry", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "ఫలహారాలు",
+      "items": [
+        { "name": "మసాలా దోశ & పచ్చడి, సాంబార్", "spiciness": 0 },
+        { "name": "ఉల్లిపాయ దోశ & పచ్చడి, సాంబార్", "spiciness": 0 },
+        { "name": "మెదు వడ & పచ్చడి, సాంబార్", "spiciness": 0 },
+        { "name": "ఇడ్లీ & పచ్చడి, సాంబార్", "spiciness": 0 },
+        { "name": "మసాలా వడ", "spiciness": 0 },
+        { "name": "పొంగల్ & సాంబార్", "spiciness": 0 },
+        { "name": "జీడిపప్పు బొంబాయి రవ్వ ఉప్మా", "spiciness": 0 },
+        { "name": "పూరి & ఆలూ కూర", "spiciness": 0 }
+      ]
+    }
+  }
+}

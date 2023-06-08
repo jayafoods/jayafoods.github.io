@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+  .left-pane {
+    display: none;
+  }
+
+  .main-pane,
+  .intro-pane {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 60px;
+  }
+
+  .text-menu {
+    margin-left: 20px;
+    margin-right: unset;
+    grid-template-columns: unset;
+  }
+
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "DishName": {
+      "en": "Veg Biryani",
+      "te": "వెజ్ బిర్యానీ"
+    },
+    "DishDescription": {
+      "en": "Delicious Biryani made with rice, vegetables, ghee and spices.",
+      "te": "నోరూరించే బిర్యానీ. అన్నము, కాయగూరలు, నెయ్యి, మసాలా దినుసులతో తయారైన వెజ్ బిర్యానీ."
+    },
+    "DishImage": {
+      "small": "img/veg-biryani-small.png",
+      "medium": "img/veg-biryani-medium.png",
+      "large": "img/veg-biryani-large.png"
+    }
+  },
+
+  {
+    "DishName": {
+      "en": "Pulihora",
+      "te": "పులిహోర"
+    },
+    "DishDescription": {
+      "en": "Pulihora made with rice, tamarind and other ingredients.",
+      "te": "అన్నము, చింతపండు మరియు పసుపు, మిరపకాయలు లాంటి ఇతర దినుసులతో తయారు చేసిన పులిహోర."
+    },
+    "DishImage": {
+      "small": "img/pulihora-small.png",
+      "medium": "img/pulihora-medium.png",
+      "large": "img/pulihora-large.png"
+    }
+  },
+
+  {
+    "DishName": {
+      "en": "Garelu",
+      "te": "గారెలు"
+    },
+    "DishDescription": {
+      "en": "Description about Garelu, soon.",
+      "te": "గారెలు గురించిన వివరాలు త్వరలో."
+    },
+    "DishImage": {
+      "small": "img/garelu-small.png",
+      "medium": "img/garelu-medium.png",
+      "large": "img/garelu-large.png"
+    }
+  },
+
+  {
+    "DishName": {
+      "en": "Chakralu",
+      "te": "చక్రాలు"
+    },
+    "DishDescription": {
+      "en": "Chakralu, Jantikalu, Murukulu.",
+      "te": "చక్రాలు, జంతికలు, మురుకులు."
+    },
+    "DishImage": {
+      "small": "img/chakralu-small.png",
+      "medium": "img/chakralu-medium.png",
+      "large": "img/chakralu-large.png"
+    }
+  },
+
+  {
+    "DishName": {
+      "en": "Bread sweet",
+      "te": "బ్రెడ్ స్వీట్"
+    },
+    "DishDescription": {
+      "en": "Bread sweet or Double-ka-meetha made with bread, sugar, ghee, almonds etc.",
+      "te": "బ్రెడ్ స్వీట్ లేదా డబల్-కా-మీఠా - బ్రెడ్, పంచదార, నెయ్యి, బాదాం మొదలైన పదార్ధాలతో తయారైనది."
+    },
+    "DishImage": {
+      "small": "img/bread-sweet-small.png",
+      "medium": "img/bread-sweet-medium.png",
+      "large": "img/bread-sweet-large.png"
+    }
+  }
+]

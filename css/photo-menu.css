@@ -1,0 +1,134 @@
+:root {
+  --left-pane-width: 240px;
+}
+
+.gray-strike {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.left-pane {
+  background-color: #333333;
+  color: white;
+  height: 100vh;
+  left: 0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: var(--left-pane-width);
+}
+
+.left-pane a {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.left-pane a:hover {
+  text-decoration: underline;
+}
+
+.main-pane,
+.intro-pane {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F8F8;
+  margin-right: 20px;
+  padding: 20px;
+  text-align: justify;
+  padding-top: 40px;
+  margin-left: var(--left-pane-width);
+}
+
+.main-pane p,
+.intro-pane p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  max-width: 900px;
+  text-align: justify;
+  text-justify: inter-word;
+  word-wrap: break-word;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.intro-pane {
+  column-count: unset !important;
+}
+
+.main-pane strong,
+.intro-pane strong {
+  font-weight: bold;
+}
+
+.language-dropdown {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.language-dropdown label {
+  color: white;
+  margin-right: 8px;
+}
+
+.language-dropdown select {
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+.menu-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+}
+
+.menu-card img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: inherit;
+  box-shadow: inherit;
+}
+
+.menu-card:hover {
+  transform: rotate(-5deg);
+}
+
+.menu-card h2 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.menu-card p {
+  color: #666;
+}
+
+@media only screen and (max-width: 600px) {
+  .left-pane {
+    display: none;
+  }
+
+  .main-pane,
+  .intro-pane {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 60px; // Add some space at the top to prevent overlap with fixed top-bar
+  }
+}
+
+@media (max-width: 600px) {
+  .text-menu {
+    margin-left: 20px;
+  }
+}
