@@ -1,0 +1,10 @@
+.search-bar {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#search-input {
+    padding: 5px;
+    font-size: 16px;
+}

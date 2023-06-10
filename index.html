@@ -8,12 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="css/top-bar.css">  
+  <link rel="stylesheet" href="css/top-bar.css">
   <link rel="stylesheet" href="css/logo-pane.css">
+  <link rel="stylesheet" href="css/search-bar.css">
   <link rel="stylesheet" href="css/text-menu.css">
   <link rel="stylesheet" href="css/photo-menu.css">
   <link rel="stylesheet" href="css/intro-pane.css">
   <link rel="stylesheet" href="css/shopping.css">
+  <link rel="stylesheet" href="css/search-results.css">
 </head>
 <body>
   <div class="top-bar" role="navigation">
@@ -54,6 +56,19 @@
     </div>
   </div>
 
+  <div class="search-results-container" id="search-results">
+    <div class="shopping-list-topbar">
+      <h2 class="shopping-list-title">Search Results</h2>
+      <div class="toolbar">
+        <button id="copy-search-button">Copy</button>
+        <button id="clear-search-button">Clear</button>
+      </div>
+    </div>
+    <div id="search-results-items">
+      <ul></ul>
+    </div>
+  </div>
+
   <div class="intro-pane container" id="intro-pane" role="main" aria-label="Introduction">
     <h3>
       <span class="localizable lang-en">Catering Delicious South Indian Food!</span>
@@ -61,6 +76,10 @@
     </h3>
       <span class="localizable lang-en">More <strong>details</strong> are coming <strong>soon!</strong></span><br>
       <span class="localizable lang-te">మరన్ని వివిరాలు <strong>త్వరలో</strong>!</span><br>
+
+      <div class="search-bar">
+          <input type="text" id="search-input" placeholder="Search items...">
+      </div>      
   </div>
 
   <div class="text-menu container" id="text-menu" role="region" aria-label="Text-based Menu">
