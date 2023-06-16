@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/intro-pane.css">
   <link rel="stylesheet" href="css/shopping.css">
   <link rel="stylesheet" href="css/search-results.css">
+  <link rel="stylesheet" href="css/parent-container.css">
 </head>
 <body>
   <div class="top-bar" role="navigation">
@@ -37,7 +38,7 @@
       </select>
     </div>
   </div>
-  
+
   <div class="container-logo">
     <div class="outer-circle"></div>
       <h1 class="logo">Jaya Foods</h1>
@@ -69,25 +70,26 @@
     </div>
   </div>
 
-  <div class="intro-pane container" id="intro-pane" role="main" aria-label="Introduction">
-    <h3>
-      <span class="localizable lang-en">Catering Delicious South Indian Food!</span>
-      <span class="localizable lang-te">నోరూరించే దక్షిణ భారత వంటకాలు!</span>
-    </h3>
-      <span class="localizable lang-en">More <strong>details</strong> are coming <strong>soon!</strong></span><br>
-      <span class="localizable lang-te">మరన్ని వివిరాలు <strong>త్వరలో</strong>!</span><br>
+  <div class="parent-container">
+    <div class="intro-pane container" id="intro-pane" role="main" aria-label="Introduction">
+      <h3>
+        <span class="localizable lang-en">Catering Delicious South Indian Food!</span>
+        <span class="localizable lang-te">నోరూరించే దక్షిణ భారత వంటకాలు!</span>
+      </h3>
+        <span class="localizable lang-en">More <strong>details</strong> are coming <strong>soon!</strong></span><br>
+        <span class="localizable lang-te">మరన్ని వివిరాలు <strong>త్వరలో</strong>!</span><br>
+        <div class="search-bar">
+            <br><br><input type="text" id="search-input" placeholder="Search items..."><br>
+        </div>      
+    </div>
 
-      <div class="search-bar">
-          <input type="text" id="search-input" placeholder="Search items...">
-      </div>      
-  </div>
+    <div class="text-menu container" id="text-menu" role="region" aria-label="Text-based Menu">
+      <!-- Text based menu cards load here -->
+    </div>
 
-  <div class="text-menu container" id="text-menu" role="region" aria-label="Text-based Menu">
-    <!-- Text based menu cards load here -->
-  </div>
-
-  <div class="main-pane container" id="main-pane" role="main" aria-label="Menu Cards">
-    <!-- photo based menu cards load here -->    
+    <div class="main-pane container" id="main-pane" role="main" aria-label="Menu Cards">
+      <!-- photo based menu cards load here -->    
+    </div>
   </div>
 
   <script src="js/menus.js"></script>

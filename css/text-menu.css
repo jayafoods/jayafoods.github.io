@@ -9,30 +9,54 @@
 
 .text-menu .item-list .item:hover {
   background-color: #f0f0f0;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.text-menu .item-list .item:hover,
+.text-menu .item-list .item:active {
+  transform: scale(1.1) !important; 
+  background-color: #f8f8f8 !important;
+}
+
+.text-menu .item-list .item .add-button {
+  display: inline;
+  background-color: transparent; /* make button background transparent */
+  border: 1px solid transparent; /* set transparent border */
+  color: transparent; /* make the text transparent */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .text-menu .item-list .item:hover .add-button {
-  display: inline;
+  color: gray; /* change color on hover */
+  background-color: white; /* change background color on hover */
+  border-color: gray; /* change border color on hover */
 }
 
 .text-menu {
-  margin-left: var(--left-pane-width);
+  margin-left: calc(var(--left-pane-width) + 20px);
   margin-right: 20px;
   margin-bottom: 25px;
-  column-count: 1;
   column-gap: 20px;
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
+/*   max-width: 330px; */
+  display: grid; /* Use grid layout instead of column layout */
+  max-width: 100%; /* Allow the container to take up as much space as possible */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Allow as many 300px columns as possible */
+  align-self: stretch;
 }
 
-.text-menu .item-list {
+.item-list {
   list-style-type: none;
   padding: 5px;
   margin: 0;
   background-color: rgba(255, 216, 92, 0.8);
+  max-width: 100%; /* Ensure the item list occupies the maximum width available */
 }
 
 .text-menu .category {
@@ -84,44 +108,103 @@
   color: #333333;
 }
 
-.text-menu .item-list .item:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-
 .text-menu .item-list .item {
   margin-bottom: 5px;
   margin-left: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
-
-.text-menu .item-list .item:hover,
-.text-menu .item-list .item:active {
-  transform: scale(1.1) !important; 
-  background-color: #f8f8f8 !important;
+#dimensions-container {
+  font-size: 14px;
+  text-align: center;
 }
 
-@media (min-width: 600px) {
-  .text-menu {
-    margin-left: var(--left-pane-width);
-    margin-right: 20px;
-    column-count: 2;
+#width, #height {
+  display: block;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+  /* Styles for devices with a width between 360px and 768px */
+
+  /* Portrait orientation */
+  @media (orientation: portrait) {
+    .left-pane {
+      display: none;
+    }
+
+    .text-menu {
+      grid-template-columns: repeat(1, 1fr); /* Only 1 column */
+    }
+  }
+
+  /* Landscape orientation */
+  @media (orientation: landscape) {
+    .left-pane {
+      display: none;
+    }
+
+    .text-menu {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for landscape mode */
+    }
   }
 }
 
-@media (min-width: 900px) {
-  .text-menu {
-    margin-left: var(--left-pane-width);
+@media only screen and (max-width: 768px) {
+  .left-pane {
+    display: none;
+  }
+
+  .main-pane,
+  .intro-pane {
+    margin-left: 20px;
     margin-right: 20px;
-    column-count: 3;
+    padding-top: 60px;
+  }
+
+  .text-menu {
+    grid-template-columns: repeat(1, 1fr); /* Only 1 column */
   }
 }
 
-@media (min-width: 1200px) {
-  .text-menu {
-    margin-left: var(--left-pane-width);
+@media (min-width: 901px) {
+  .left-pane {
+    display: block;
+  }
+
+  .main-pane,
+  .intro-pane {
+    margin-left: calc(var(--left-pane-width) + 20px);
     margin-right: 20px;
-    column-count: 4;
+    padding-top: 60px; /* Add some space at the top to prevent overlap with fixed top-bar */
+  }
+
+  .text-menu {
+    margin-left: calc(var(--left-pane-width) + 20px);
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .left-pane {
+    display: none;
+  }
+
+  .main-pane,
+  .intro-pane {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 60px; /* Add some space at the top to prevent overlap with fixed top-bar */
+  }
+
+  .text-menu {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 901px) {
+  .text-menu {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Allow as many 300px columns as possible */
+    max-width: 75%; /* On bigger screens, 4 columns are enough, and that also leaves a nice margin on the right */
   }
 }

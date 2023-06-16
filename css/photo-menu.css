@@ -54,6 +54,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
+  align-self: stretch;
 }
 
 .intro-pane {
@@ -114,21 +115,20 @@
   color: #666;
 }
 
-@media only screen and (max-width: 600px) {
-  .left-pane {
-    display: none;
-  }
 
-  .main-pane,
-  .intro-pane {
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-top: 60px; // Add some space at the top to prevent overlap with fixed top-bar
-  }
-}
+@media only screen and (min-width: 360px) and (max-width: 768px) {
+    .left-pane {
+        display: none;
+    }
 
-@media (max-width: 600px) {
-  .text-menu {
-    margin-left: 20px;
-  }
+    .main-pane,
+    .intro-pane {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 60px;
+    }
+
+    .text-menu {
+        margin-left: 20px;
+    }
 }

@@ -3,7 +3,7 @@
     "en": {
       "title": "Starters",
       "items": [
-        { "name": "Gaarelu", "spiciness": 0 },
+        { "name": "Garelu", "spiciness": 0 },
         { "name": "Poornaalu", "spiciness": 0 },
         { "name": "Masala vada", "spiciness": 0 },
         { "name": "Mirchi Bajji", "spiciness": 2 },
@@ -33,6 +33,7 @@
         { "name": "Mushroom Biryani", "spiciness": 0 },
         { "name": "Coconut Rice", "spiciness": 0 },
         { "name": "Tamarind Rice", "spiciness": 0 },
+        { "name": "Lemon Rice", "spiciness": 0 },
         { "name": "Veg Fried Rice", "spiciness": 0 }
       ]
     },
@@ -42,8 +43,8 @@
         { "name": "వెజిటబుల్ బిర్యాని", "spiciness": 0 },
         { "name": "మష్రూమ్ బిర్యాని", "spiciness": 0 },
         { "name": "కొబ్బరి అన్నం", "spiciness": 0 },
-        { "name": "చింతపండు అన్నం", "spiciness": 0 },
-        { "name": "గుడ్డు ఫ్రైడ్ రైస్", "spiciness": 0 },
+        { "name": "చింతపండు పులిహోర", "spiciness": 0 },
+        { "name": "నిమ్మకాయ పులిహోర", "spiciness": 0 },
         { "name": "వెజ్ ఫ్రైడ్ రైస్", "spiciness": 0 }
       ]
     }

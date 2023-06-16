@@ -1,20 +1,22 @@
-body #intro-pane.intro-pane {
-  background-color: #F8F8F8;
-  margin-right: 20px;
-  padding: 20px;
-  text-align: justify;
-  break-inside: initial;
-  page-break-inside: initial;
-  overflow-wrap: break-word;
-}
-
 body #intro-pane.container {
   grid-template-columns: 1fr;
 }
 
+body #intro-pane.intro-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: flex-start; /* Align items to the left */
+  background-color: #F8F8F8;
+  padding: 20px;
+  text-align: left; 
+  overflow-wrap: break-word;
+}
+
 body .intro-pane p {
-  line-height: 0 //!important; // Adjust this value to change line spacing
-  margin-bottom: 5px //!important; // Adjust this value to change paragraph spacing
+  line-height: 1.5;
+  margin-bottom: 5px;
+  word-wrap: break-word;
 }
 
 p {
@@ -23,6 +25,7 @@ p {
 
 .intro-pane {
   position: relative;
+  align-self: stretch;
 }
 
 .intro-pane p {
@@ -36,9 +39,9 @@ p {
 }
 
 .intro-pane {
-/*   padding-top: 20px; /* Adjust the value as needed */ */
-  border-top: 80px solid white; /* Adjust the color and value as needed */
-/*   border-bottom: 25px solid white; /* Adjust the border color and width as needed */ */
+/*   padding-top: 20px; */
+/*   border-top: 80px solid white; */
+/*   border-bottom: 25px solid white; */
 }
 
 /*
@@ -78,3 +81,33 @@ span {
           column-rule: unset !important;
 }
 */
+
+@media (max-width: 600px) {
+  body #intro-pane.intro-pane {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  body #intro-pane.intro-pane {
+    margin-left: var(--left-pane-width);
+    padding-left: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 360px) {
+  body #intro-pane.intro-pane {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body #intro-pane.intro-pane {
+    margin-left: var(--left-pane-width);
+    padding-left: 20px;
+  }
+}
+
