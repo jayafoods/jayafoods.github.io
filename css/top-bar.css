@@ -4,12 +4,7 @@ body {
   padding: 0;
 }
 
-.lang-en,
-.lang-te:not(.selected) {
-}
-
 .caption {
-  font-family: 'Poppins', sans-serif;
   font-weight: bold;
 }
 
@@ -40,3 +35,6 @@ body {
   text-decoration: underline;
 }
 
+.top-bar .caption {
+  font-weight: bold;
+}

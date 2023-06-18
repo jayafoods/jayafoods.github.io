@@ -4,5 +4,6 @@
   align-items: center;
   gap: 20px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 0 5px;
+  box-sizing: border-box;
 }

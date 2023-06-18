@@ -1,5 +1,5 @@
-:root {
-  --left-pane-width: 240px;
+body {
+  font-family: 'Poppins', sans-serif;
 }
 
 .gray-strike {
@@ -7,63 +7,28 @@
   text-decoration: line-through;
 }
 
-.left-pane {
-  background-color: #333333;
-  color: white;
-  height: 100vh;
-  left: 0;
-  padding: 20px;
-  position: fixed;
-  top: 0;
-  width: var(--left-pane-width);
-}
-
-.left-pane a {
-  color: white;
-  display: block;
-  margin-bottom: 10px;
-  text-decoration: none;
-}
-
-.left-pane a:hover {
-  text-decoration: underline;
-}
-
-.main-pane,
-.intro-pane {
-  font-family: 'Poppins', sans-serif;
+.main-pane, .intro-pane {
   background-color: #F8F8F8;
   margin-right: 20px;
   padding: 20px;
-  text-align: justify;
   padding-top: 40px;
-  margin-left: var(--left-pane-width);
+  margin-left: 240px;
+  text-align: justify;
 }
 
-.main-pane p,
-.intro-pane p {
+.main-pane p, .intro-pane p {
   line-height: 1.5;
   margin-bottom: 20px;
   max-width: 900px;
-  text-align: justify;
   text-justify: inter-word;
   word-wrap: break-word;
 }
 
-.container {
+.main-pane-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
   align-self: stretch;
-}
-
-.intro-pane {
-  column-count: unset !important;
-}
-
-.main-pane strong,
-.intro-pane strong {
-  font-weight: bold;
 }
 
 .language-dropdown {
@@ -87,16 +52,13 @@
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-sizing: border-box;
 }
 
 .menu-card img {
   width: 100%;
   height: auto;
-  max-width: 100%;
-  display: block;
   margin: 0 auto;
   border-radius: inherit;
   box-shadow: inherit;
@@ -113,22 +75,4 @@
 
 .menu-card p {
   color: #666;
-}
-
-
-@media only screen and (min-width: 360px) and (max-width: 768px) {
-    .left-pane {
-        display: none;
-    }
-
-    .main-pane,
-    .intro-pane {
-        margin-left: 20px;
-        margin-right: 20px;
-        padding-top: 60px;
-    }
-
-    .text-menu {
-        margin-left: 20px;
-    }
 }

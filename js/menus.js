@@ -2,68 +2,116 @@
 // Search functionality
 // ==========================
 
-document.getElementById('search-input').addEventListener('keyup', function() {
+// Define the input event listener as a named function
+function handleSearchInput() {
   let searchQuery = this.value.toLowerCase();
 
   let items = document.querySelectorAll('.text-menu .item-list .item');
 
   const searchResultsContainer = document.getElementById('search-results');
   const searchResultsItemsContainer = document.getElementById('search-results-items');
+  const searchResultsTopbar = document.querySelector('.search-results-topbar');
 
   // Clear the search results container before appending new content
   while (searchResultsItemsContainer.firstChild) {
     searchResultsItemsContainer.removeChild(searchResultsItemsContainer.firstChild);
   }
 
+  let hasResults = false; // Track if there are any search results
+
+  // items.forEach(function (item) {
+  //   let itemText = item.textContent.toLowerCase();
+  //   if (itemText.includes(searchQuery)) {
+  //     const listItem = document.createElement('li');
+  //     listItem.textContent = itemText.replace('➕', '');
+  //     searchResultsItemsContainer.appendChild(listItem);
+  //     hasResults = true;
+  //   }
+  // });
+
+  items.forEach(function (item) {
+    let itemText = item.textContent.toLowerCase();
+    if (itemText.includes(searchQuery)) {
+      const listItem = document.createElement('li');
+      
+      const spanItem = document.createElement('span');
+      spanItem.textContent = itemText.replace('➕', '');
+      spanItem.className = 'item-text';
+      
+      listItem.appendChild(spanItem);
+      searchResultsItemsContainer.appendChild(listItem);
+      hasResults = true;
+    }
+  });  
+
+  // Add or remove CSS classes to show or hide the search results container and its top bar
   if (searchQuery.trim() !== '') {
-    let hasResults = false; // Track if there are any search results
-
-    items.forEach(function(item) {
-      let itemText = item.textContent.toLowerCase();
-      if (itemText.indexOf(searchQuery) !== -1) {
-        const listItem = document.createElement('li');
-        listItem.textContent = itemText.replace('➕', '');
-        searchResultsItemsContainer.appendChild(listItem);
-        hasResults = true;
-      }
-    });
-
     if (hasResults) {
-      searchResultsContainer.style.display = 'block';
+      searchResultsContainer.classList.add('show');
+      searchResultsContainer.classList.add('has-results');
+      searchResultsContainer.classList.remove('hide');
+      searchResultsTopbar.classList.add('show');
     } else {
-      searchResultsContainer.style.display = 'none';
+      searchResultsContainer.classList.remove('show');
+      searchResultsContainer.classList.remove('has-results');
+      searchResultsContainer.classList.add('hide');
+      searchResultsTopbar.classList.remove('show');
     }
   } else {
-    searchResultsContainer.style.display = 'none';
+    searchResultsContainer.classList.remove('show');
+    searchResultsContainer.classList.remove('has-results');
+    searchResultsContainer.classList.add('hide');
+    searchResultsTopbar.classList.remove('show');
   }
-});
+}
+
+// Attach the input event listener to the search input
+const searchInput = document.getElementById('search-input');
+searchInput.addEventListener('input', handleSearchInput);
 
 // Copy button in Search Results container
 const copySearchButton = document.getElementById('copy-search-button');
-copySearchButton.addEventListener('click', function() {
+copySearchButton.addEventListener('click', function () {
   const searchResultsList = document.querySelectorAll('#search-results-items li');
-  const searchResultsText = Array.from(searchResultsList).map(item => item.textContent).join('\n');
+  const searchResultsText = Array.from(searchResultsList).map((item) => item.textContent).join('\n');
   navigator.clipboard.writeText(searchResultsText)
     .then(() => {
       alert('Search results copied to clipboard');
     })
-    .catch(err => {
-      console.error('Could not copy search results: ', err);
+    .catch((error) => {
+      console.error('Could not copy search results: ', error);
     });
 });
 
 // Clear button in Search Results container
 const clearSearchButton = document.getElementById('clear-search-button');
-clearSearchButton.addEventListener('click', function() {
-  const searchInput = document.getElementById('search-input');
+clearSearchButton.addEventListener('click', function () {
   searchInput.value = ''; // Clear the search input text
 
   const searchResultsContainer = document.getElementById('search-results');
   const searchResultsItemsContainer = document.getElementById('search-results-items');
+  const searchResultsTopbar = document.querySelector('.search-results-topbar');
+
   searchResultsItemsContainer.innerHTML = '';
-  searchResultsContainer.style.display = 'none';
+
+  searchResultsContainer.classList.remove('show');
+  searchResultsContainer.classList.remove('has-results');
+  searchResultsContainer.classList.add('hide');
+
+  searchResultsTopbar.classList.remove('show');
 });
 
+window.addEventListener('resize', adjustPaddingTop);
+window.addEventListener('DOMContentLoaded', adjustPaddingTop);
+
+function adjustPaddingTop() {
+  const searchResultsTopbar = document.querySelector('.search-results-topbar');
+  const searchResultsItemsContainer = document.getElementById('search-results-items');
+  
+  const topbarHeight = searchResultsTopbar.offsetHeight;
+  
+  searchResultsItemsContainer.style.paddingTop = `${topbarHeight}px`;
+}
 
 // ==========================
 // Shopping list functions
@@ -187,11 +235,11 @@ function displayShoppingList() {
 // ====================================================
 
 function loadTextMenu(language) {
-  const textMenuPane = document.getElementById('text-menu');
+  const textMenuContainer = document.getElementById('text-menu');
 
-  // Clear the textMenuPane before appending new content
-  while (textMenuPane.firstChild) {
-    textMenuPane.removeChild(textMenuPane.firstChild);
+  // Clear the textMenuContainer before appending new content
+  while (textMenuContainer.firstChild) {
+    textMenuContainer.removeChild(textMenuContainer.firstChild);
   }
 
   const jsonFile = 'data/text-menu.json';
@@ -210,17 +258,17 @@ function loadTextMenu(language) {
 
         const categoryTitle = document.createElement('h3');
         categoryTitle.className = 'category-title';
-        categoryTitle.textContent = jsonData[category][language].title; 
+        categoryTitle.textContent = jsonData[category][language].title;
         categoryDiv.appendChild(categoryTitle);
 
         const itemList = document.createElement('ul');
         itemList.className = 'item-list';
 
-        const items = jsonData[category][language].items; 
+        const items = jsonData[category][language].items;
         for (let item of items) {
           const listItem = document.createElement('li');
           listItem.className = 'item';
-          listItem.textContent = item.name; 
+          listItem.textContent = item.name;
 
           const addButton = document.createElement('button');
           addButton.className = 'add-button';
@@ -235,20 +283,20 @@ function loadTextMenu(language) {
           if (item.spiciness > 0) {
             const pepperIcon = document.createElement('span');
             pepperIcon.className = 'spicy-icon';
-            pepperIcon.textContent = '🌶️'.repeat(item.spiciness); 
-            listItem.insertBefore(pepperIcon, listItem.firstChild); 
+            pepperIcon.textContent = '🌶️'.repeat(item.spiciness);
+            listItem.insertBefore(pepperIcon, listItem.firstChild);
           } else {
             const dotIcon = document.createElement('span');
             dotIcon.className = 'dot-icon';
-            dotIcon.textContent = '•'; 
-            listItem.insertBefore(dotIcon, listItem.firstChild); 
+            dotIcon.textContent = '•';
+            listItem.insertBefore(dotIcon, listItem.firstChild);
           }
 
           itemList.appendChild(listItem);
         }
 
         categoryDiv.appendChild(itemList);
-        textMenuPane.appendChild(categoryDiv);
+        textMenuContainer.appendChild(categoryDiv);
       }
     })
     .catch((error) => {
@@ -256,21 +304,12 @@ function loadTextMenu(language) {
     });
 }
 
-
-var languageDropdown = document.getElementById('language');
-if (languageDropdown) {
-  var language = languageDropdown.value;
-  document.querySelectorAll('.lang-' + language).forEach(function(element) {
-    element.style.display = '';
-  });
-}
-
 function loadMenuCards(language) {
-  const mainPane = document.getElementById('main-pane');
+  const mainPaneContainer = document.getElementById('main-pane');
 
-  // Clear the mainPane before appending new content
-  while (mainPane.firstChild) {
-    mainPane.removeChild(mainPane.firstChild);
+  // Clear the mainPaneContainer before appending new content
+  while (mainPaneContainer.firstChild) {
+    mainPaneContainer.removeChild(mainPaneContainer.firstChild);
   }
 
   const jsonFile = 'data/photo-menu.json';
@@ -307,7 +346,7 @@ function loadMenuCards(language) {
         description.textContent = item.DishDescription[language];
         card.appendChild(description);
 
-        mainPane.appendChild(card);
+        mainPaneContainer.appendChild(card);
       });
     })
     .catch((error) => {

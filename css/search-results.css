@@ -1,9 +1,8 @@
+.shopping-list-container,
 .search-results-container {
   position: fixed;
   top: 50px;
-  left: 20px;
-  width: 300px;
-  height: 400px;
+  width: 330px;
   border-radius: 10px;
   display: none;
   z-index: 100;
@@ -15,26 +14,32 @@
   border: 1px solid #ccc;
   padding: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hide {
+  display: none;
+}
+
+.search-results-container {
+/*   background-color: rgba(245, 245, 220, 0.7); */
+  position: fixed;
+  left: 20px;
+  top: 50px;
+  width: 300px;
+  height: 400px;
+  max-height: 400px;
   overflow-y: auto;
-}
-
-.search-results-topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  border-bottom: 1px solid #ddd;
-}
-
-.search-results-title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 0;
+  display: none;
+  padding-top: 0px;
+/*   box-sizing: border-box; /* Add this */ */
 }
 
 .toolbar {
   display: flex;
-  gap: 10px; 
+  gap: 20px; /* adjust this value to increase or decrease the space between the buttons */
+/*   justify-content: flex-end; */
+  justify-content: space-between; /* change this to 'center' if you want the buttons centered */
+  align-items: center;
 }
 
 .toolbar button {
@@ -52,6 +57,10 @@
 
 .toolbar button:hover {
   background-color: #5a6268;
+}
+
+#search-results-items {
+  padding-top: 120px; /* Adjust this value to the height of the topbar + toolbar */
 }
 
 #search-results-items ul {
@@ -88,4 +97,46 @@
 .item-text {
   margin-right: 10px;
   font-family: 'Courier New', Courier, monospace, sans-serif;
+  line-height: 1.0; 
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  box-sizing: border-box;
+  width: 100%; 
 }
+
+/* Specific styles for search results */
+.search-results-topbar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  z-index: 99; /* Ensure the topbar is above the search results container */  
+
+  top: 50px;
+
+/*   background-color: #f5f5dc; */
+/*   box-sizing: border-box; */
+  width: 85%;
+}
+
+.search-results-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.search-results-topbar.show {
+  display: flex;
+}
+
+.search-results-container.show {
+  display: block;
+}
+
+ .search-results-container.has-results {
+  display: block;
+} 

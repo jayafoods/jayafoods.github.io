@@ -1,4 +1,17 @@
-body #intro-pane.container {
+.search-bar {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+}
+
+#search-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/*------*/
+
+body #intro-pane.intro-pane-container {
   grid-template-columns: 1fr;
 }
 
@@ -11,103 +24,23 @@ body #intro-pane.intro-pane {
   padding: 20px;
   text-align: left; 
   overflow-wrap: break-word;
+  position: relative;
+  align-self: stretch;
 }
 
-body .intro-pane p {
+body .intro-pane p,
+.intro-pane p {
   line-height: 1.5;
   margin-bottom: 5px;
   word-wrap: break-word;
+  flex: 1 1 100%; /* Adjust as needed */
+  overflow-wrap: break-word;
 }
 
 p {
   margin: 0;
 }
 
-.intro-pane {
-  position: relative;
-  align-self: stretch;
-}
-
-.intro-pane p {
-  line-height: 0.8; /* Adjust this value as needed */
-  word-wrap: break-word;
-}
-
-.intro-pane p {
-  flex: 1 1 100%; /* Adjust as needed */
-  overflow-wrap: break-word;
-}
-
-.intro-pane {
-/*   padding-top: 20px; */
-/*   border-top: 80px solid white; */
-/*   border-bottom: 25px solid white; */
-}
-
-/*
-.intro-pane h1,
-.intro-pane h2,
-.intro-pane h3,
-.intro-pane p {
-  margin-top: -15px;
-  line-height: 1.2;
-  margin-bottom: 0.5em;
-
-  font-family: "Times New Roman", sans-serif;
-  background-image: linear-gradient(to left, rgba(255, 216, 92, 0.8), rgba(255, 101, 68, 1));
-}
-*/
-
-/*
-.intro-pane h1 {
-  font-size: 50px;
-}
-*/
-
 span {
   line-height: 0;
 }
-
-/*
-#intro-pane.intro-pane {
-  -webkit-column-count: unset !important;
-     -moz-column-count: unset !important;
-          column-count: unset !important;
-  -webkit-column-gap: unset !important;
-     -moz-column-gap: unset !important;
-          column-gap: unset !important;
-  -webkit-column-rule: unset !important;
-     -moz-column-rule: unset !important;
-          column-rule: unset !important;
-}
-*/
-
-@media (max-width: 600px) {
-  body #intro-pane.intro-pane {
-    margin-left: 20px;
-    padding-left: 20px;
-  }
-}
-
-@media (min-width: 600px) {
-  body #intro-pane.intro-pane {
-    margin-left: var(--left-pane-width);
-    padding-left: 20px;
-  }
-}
-
-
-@media only screen and (max-width: 768px) and (min-width: 360px) {
-  body #intro-pane.intro-pane {
-    margin-left: 20px;
-    padding-left: 20px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  body #intro-pane.intro-pane {
-    margin-left: var(--left-pane-width);
-    padding-left: 20px;
-  }
-}
-
