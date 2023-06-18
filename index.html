@@ -29,11 +29,6 @@
       <a href="contact.html" class="localizable lang-te" lang="te" aria-label="సంప్రదింపు">సంప్రదింపు</a>
     </div>
 
-    <div id="dimensions-container">
-      <span id="width"></span><br>
-      <span id="height"></span>
-    </div>
-
     <div class="language-dropdown">
       <label for="language">
         <span class="localizable lang-en" lang="en">Language</span>
@@ -101,23 +96,6 @@
       <!-- photo based menu cards load here -->    
     </div>
   </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Get the window dimensions and update the content of the span element
-
-  function updateWindowDimensions() {
-    const widthElement = document.getElementById('width');
-    const heightElement = document.getElementById('height');
-
-    widthElement.textContent = `W:${window.innerWidth}px`;
-    heightElement.textContent = `H:${window.innerHeight}px`;
-  }
-
-  updateWindowDimensions();
-  window.addEventListener('resize', updateWindowDimensions);
-    });
-  </script>  
 
   <script src="js/menus.js"></script>
 </body>
