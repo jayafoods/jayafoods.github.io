@@ -34,6 +34,7 @@
         { "name": "Coconut Rice", "spiciness": 0 },
         { "name": "Tamarind Rice", "spiciness": 0 },
         { "name": "Lemon Rice", "spiciness": 0 },
+        { "name": "Quinoa Rice", "spiciness": 0 },
         { "name": "Veg Fried Rice", "spiciness": 0 }
       ]
     },
@@ -45,6 +46,7 @@
         { "name": "కొబ్బరి అన్నం", "spiciness": 0 },
         { "name": "చింతపండు పులిహోర", "spiciness": 0 },
         { "name": "నిమ్మకాయ పులిహోర", "spiciness": 0 },
+        { "name": "కీన్వా (కినోవా) పులిహోర", "spiciness": 0 },
         { "name": "వెజ్ ఫ్రైడ్ రైస్", "spiciness": 0 }
       ]
     }
@@ -102,21 +104,21 @@
       "title": "Sweets",
       "items": [
         { "name": "Bobbatlu", "spiciness": 0 },
+        { "name": "Bread sweet", "spiciness": 0 },
         { "name": "Carrot Halwa", "spiciness": 0 },
         { "name": "Gulab Jamoon", "spiciness": 0 },
-        { "name": "Bread Halwa", "spiciness": 0 },
-        { "name": "Badam burfi", "spiciness": 0 },
-        { "name": "Soft Mysorepak", "spiciness": 0 },
-        { "name": "Kaju katli", "spiciness": 0 }
+        { "name": "Badam Burfi", "spiciness": 0 },
+        { "name": "Mysorepak", "spiciness": 0 },
+        { "name": "Kaju Katli", "spiciness": 0 }
       ]
     },
     "te": {
       "title": "మిఠాయిలు",
       "items": [
         { "name": "బొబ్బట్లు", "spiciness": 0 },
+        { "name": "బ్రెడ్ హల్వా", "spiciness": 0 },
         { "name": "క్యారెట్ హల్వా", "spiciness": 0 },
         { "name": "గులాబ్ జామూన్", "spiciness": 0 },
-        { "name": "బ్రెడ్ హల్వా", "spiciness": 0 },
         { "name": "బాదాం బర్ఫీ", "spiciness": 0 },
         { "name": "మైసూర్ పాక్", "spiciness": 0 },
         { "name": "కాజూ కట్లీ", "spiciness": 0 }
