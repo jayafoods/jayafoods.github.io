@@ -1,36 +1,6 @@
 {
   "Category1": {
     "en": {
-      "title": "Snacks",
-      "items": [
-        { "name": "Garelu", "spiciness": 0 },
-        { "name": "Vadalu", "spiciness": 0 },
-        { "name": "Mirchi Bajji", "spiciness": 1 },
-        { "name": "Banana Bajji", "spiciness": 0 },
-        { "name": "Cornflakes & Poha mixture", "spiciness": 0 },
-        { "name": "Boondi mixture", "spiciness": 0 },
-        { "name": "Onion Pakoda", "spiciness": 0 },
-        { "name": "Samosa", "spiciness": 0 },
-        { "name": "Spring rolls", "spiciness": 0 }
-      ]
-    },
-    "te": {
-      "title": "అల్పాహారాలు",
-      "items": [
-        { "name": "గారెలు", "spiciness": 0 },
-        { "name": "వడలు", "spiciness": 0 },
-        { "name": "మిరపకాయ బజ్జి", "spiciness": 1 },
-        { "name": "అరటికాయ బజ్జి", "spiciness": 0 },
-        { "name": "కార్న్ ఫ్లేక్స్ & అటుకుల మిక్చర్", "spiciness": 0 },
-        { "name": "బూందీ మిక్చర్", "spiciness": 0 },
-        { "name": "ఉల్లిపాయ పకోడి", "spiciness": 0 },
-        { "name": "సమోసా", "spiciness": 0 },
-        { "name": "స్ప్రింగ్ రోల్స్", "spiciness": 0 }
-      ]
-    }
-  },
-  "Category2": {
-    "en": {
       "title": "Rice items",
       "items": [
         { "name": "Vegetable Biryani", "spiciness": 0 },
@@ -57,7 +27,7 @@
       ]
     }
   },
-  "Category3": {
+  "Category2": {
     "en": {
       "title": "Fry Items",
       "items": [
@@ -87,7 +57,7 @@
       ]
     }
   },
-  "Category4": {
+  "Category3": {
     "en": {
       "title": "Gravy Items",
       "items": [
@@ -121,33 +91,33 @@
       ]
     }
   },
-  "Category5": {
+  "Category4": {
     "en": {
-      "title": "Sweets",
+      "title": "Dhals",
       "items": [
-        { "name": "Bobbatlu", "spiciness": 0 },
-        { "name": "Bread sweet", "spiciness": 0 },
-        { "name": "Carrot Halwa", "spiciness": 0 },
-        { "name": "Suji Halwa", "spiciness": 0 },
-        { "name": "Gulab Jamoon", "spiciness": 0 },
-        { "name": "Mysorepak", "spiciness": 0 },
-        { "name": "Poornam Boorelu", "spiciness": 0 }
+        { "name": "Mango pappu", "spiciness": 0 },
+        { "name": "Gongura pappu", "spiciness": 0 },
+        { "name": "Methi pappu", "spiciness": 0 },
+        { "name": "Palak pappu", "spiciness": 0 },
+        { "name": "Thotakura pappu", "spiciness": 0 },
+        { "name": "Tomato pappu", "spiciness": 0 },
+        { "name": "Dosakaya pappu", "spiciness": 0 }
       ]
     },
     "te": {
-      "title": "మిఠాయిలు",
+      "title": "పప్పులు",
       "items": [
-        { "name": "బొబ్బట్లు", "spiciness": 0 },
-        { "name": "బ్రెడ్ హల్వా", "spiciness": 0 },
-        { "name": "క్యారెట్ హల్వా", "spiciness": 0 },
-        { "name": "సూజీ హల్వా", "spiciness": 0 },
-        { "name": "గులాబ్ జామూన్", "spiciness": 0 },
-        { "name": "మైసూర్ పాక్", "spiciness": 0 },
-        { "name": "పూర్ణం బూరెలు", "spiciness": 0 }
+        { "name": "మామిడికాయ పప్పు", "spiciness": 0 },
+        { "name": "గోంగూర పప్పు", "spiciness": 0 },
+        { "name": "మెంతికూర పప్పు", "spiciness": 0 },
+        { "name": "పాలకూర పప్పు", "spiciness": 0 },
+        { "name": "తోటకూర పప్పు", "spiciness": 0 },
+        { "name": "టొమేటో పప్పు", "spiciness": 0 },
+        { "name": "దోసకాయ పప్పు", "spiciness": 0 }
       ]
     }
-  },
-  "Category6": {
+  },  
+  "Category5": {
     "en": {
       "title": "Chutneys",
       "items": [
@@ -166,6 +136,62 @@
         { "name": "బీరకాయ పచ్చడి", "spiciness": 1 },
         { "name": "టమాటో పచ్చడి", "spiciness": 1 },
         { "name": "పుదీనా పచ్చడి", "spiciness": 1 }
+      ]
+    }
+  },
+  "Category6": {
+    "en": {
+      "title": "Snacks",
+      "items": [
+        { "name": "Garelu", "spiciness": 0 },
+        { "name": "Vadalu", "spiciness": 0 },
+        { "name": "Mirchi Bajji", "spiciness": 1 },
+        { "name": "Banana Bajji", "spiciness": 0 },
+        { "name": "Cornflakes, Poha mixture", "spiciness": 0 },
+        { "name": "Boondi mixture", "spiciness": 0 },
+        { "name": "Onion Pakoda", "spiciness": 0 },
+        { "name": "Samosa", "spiciness": 0 },
+        { "name": "Spring rolls", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "అల్పాహారాలు",
+      "items": [
+        { "name": "గారెలు", "spiciness": 0 },
+        { "name": "వడలు", "spiciness": 0 },
+        { "name": "మిరపకాయ బజ్జి", "spiciness": 1 },
+        { "name": "అరటికాయ బజ్జి", "spiciness": 0 },
+        { "name": "కార్న్ ఫ్లేక్స్, అటుకుల మిక్చర్", "spiciness": 0 },
+        { "name": "బూందీ మిక్చర్", "spiciness": 0 },
+        { "name": "ఉల్లిపాయ పకోడి", "spiciness": 0 },
+        { "name": "సమోసా", "spiciness": 0 },
+        { "name": "స్ప్రింగ్ రోల్స్", "spiciness": 0 }
+      ]
+    }
+  },
+  "Category7": {
+    "en": {
+      "title": "Sweets",
+      "items": [
+        { "name": "Bobbatlu", "spiciness": 0 },
+        { "name": "Bread sweet / double-ka-meetha", "spiciness": 0 },
+        { "name": "Carrot Halwa", "spiciness": 0 },
+        { "name": "Suji Halwa", "spiciness": 0 },
+        { "name": "Gulab Jamoon", "spiciness": 0 },
+        { "name": "Mysorepak", "spiciness": 0 },
+        { "name": "Poornam Boorelu", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "మిఠాయిలు",
+      "items": [
+        { "name": "బొబ్బట్లు", "spiciness": 0 },
+        { "name": "బ్రెడ్ హల్వా / డబుల్ కమీటా", "spiciness": 0 },
+        { "name": "క్యారెట్ హల్వా", "spiciness": 0 },
+        { "name": "సూజీ హల్వా", "spiciness": 0 },
+        { "name": "గులాబ్ జామూన్", "spiciness": 0 },
+        { "name": "మైసూర్ పాక్", "spiciness": 0 },
+        { "name": "పూర్ణం బూరెలు", "spiciness": 0 }
       ]
     }
   }
