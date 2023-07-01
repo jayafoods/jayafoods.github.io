@@ -1,27 +1,31 @@
 {
   "Category1": {
     "en": {
-      "title": "Starters",
+      "title": "Snacks",
       "items": [
         { "name": "Garelu", "spiciness": 0 },
         { "name": "Vadalu", "spiciness": 0 },
-        { "name": "Poornaalu", "spiciness": 0 },
-        { "name": "Mirchi Bajji", "spiciness": 2 },
+        { "name": "Mirchi Bajji", "spiciness": 1 },
+        { "name": "Banana Bajji", "spiciness": 0 },
+        { "name": "Cornflakes & Poha mixture", "spiciness": 0 },
+        { "name": "Boondi mixture", "spiciness": 0 },
         { "name": "Onion Pakoda", "spiciness": 0 },
-        { "name": "Gobi Manchuria", "spiciness": 0 },
-        { "name": "Veg Manchuria", "spiciness": 0 }
+        { "name": "Samosa", "spiciness": 0 },
+        { "name": "Spring rolls", "spiciness": 0 }
       ]
     },
     "te": {
-      "title": "స్టార్టర్లు",
+      "title": "అల్పాహారాలు",
       "items": [
         { "name": "గారెలు", "spiciness": 0 },
         { "name": "వడలు", "spiciness": 0 },
-        { "name": "పూర్ణాలు", "spiciness": 0 },
-        { "name": "మిరపకాయ బజ్జి", "spiciness": 2 },
+        { "name": "మిరపకాయ బజ్జి", "spiciness": 1 },
+        { "name": "అరటికాయ బజ్జి", "spiciness": 0 },
+        { "name": "కార్న్ ఫ్లేక్స్ & అటుకుల మిక్చర్", "spiciness": 0 },
+        { "name": "బూందీ మిక్చర్", "spiciness": 0 },
         { "name": "ఉల్లిపాయ పకోడి", "spiciness": 0 },
-        { "name": "గోబి మంచూరియా", "spiciness": 0 },
-        { "name": "వెజ్ మంచూరియా", "spiciness": 0 }
+        { "name": "సమోసా", "spiciness": 0 },
+        { "name": "స్ప్రింగ్ రోల్స్", "spiciness": 0 }
       ]
     }
   },
@@ -31,10 +35,11 @@
       "items": [
         { "name": "Vegetable Biryani", "spiciness": 0 },
         { "name": "Mushroom Biryani", "spiciness": 0 },
+        { "name": "Mint Rice", "spiciness": 0 },
         { "name": "Coconut Rice", "spiciness": 0 },
         { "name": "Tamarind Rice", "spiciness": 0 },
         { "name": "Lemon Rice", "spiciness": 0 },
-        { "name": "Quinoa Rice", "spiciness": 0 },
+        { "name": "Quinoa Lemon Rice", "spiciness": 0 },
         { "name": "Veg Fried Rice", "spiciness": 0 }
       ]
     },
@@ -43,10 +48,11 @@
       "items": [
         { "name": "వెజిటబుల్ బిర్యాని", "spiciness": 0 },
         { "name": "మష్రూమ్ బిర్యాని", "spiciness": 0 },
+        { "name": "పొదీనా బిర్యానీ", "spiciness": 0 },
         { "name": "కొబ్బరి అన్నం", "spiciness": 0 },
         { "name": "చింతపండు పులిహోర", "spiciness": 0 },
         { "name": "నిమ్మకాయ పులిహోర", "spiciness": 0 },
-        { "name": "కీన్వా (కినోవా) పులిహోర", "spiciness": 0 },
+        { "name": "కీన్వా (కినోవా) నిమ్మకాయ పులిహోర", "spiciness": 0 },
         { "name": "వెజ్ ఫ్రైడ్ రైస్", "spiciness": 0 }
       ]
     }
@@ -55,22 +61,28 @@
     "en": {
       "title": "Fry Items",
       "items": [
-        { "name": "Bhendi Pakodi", "spiciness": 0 },
+        { "name": "Bhendi fry", "spiciness": 0 },
         { "name": "Dondakaya Pakodi", "spiciness": 0 },
-        { "name": "Soyachunks greenpeas fry", "spiciness": 0 },
-        { "name": "Cauliflower Potato fry", "spiciness": 0 },
-        { "name": "Beans Carrot Peas fry", "spiciness": 0 },
+        { "name": "Eggplant fry", "spiciness": 0 },
+        { "name": "Potato fry", "spiciness": 0 },
+        { "name": "Cauliflower fry", "spiciness": 0 },
+        { "name": "Beans fry", "spiciness": 0 },
+        { "name": "Carrot fry", "spiciness": 0 },
+        { "name": "Gobi Manchuria", "spiciness": 0 },
         { "name": "Mixed vegetables fry", "spiciness": 0 }
       ]
     },
     "te": {
       "title": "వేపుళ్లు",
       "items": [
-        { "name": "బెండకాయ పకోడి", "spiciness": 0 },
+        { "name": "బెండకాయ వేపుడు", "spiciness": 0 },
         { "name": "దొండకాయ పకోడి", "spiciness": 0 },
-        { "name": "సోయా చంక్స్ పచ్చ బఠాని వేపుడు", "spiciness": 0 },
-        { "name": "గోబీ బంగాళాదుంప వేపుడు", "spiciness": 0 },
-        { "name": "బీన్స్ క్యారెట్ బఠాని వేపుడు", "spiciness": 0 },
+        { "name": "వంకాయ వేపుడు", "spiciness": 0 },
+        { "name": "బంగాళాదుంప వేపుడు", "spiciness": 0 },
+        { "name": "కాలిఫ్లవర్ వేపుడు", "spiciness": 0 },
+        { "name": "బీన్స్ వేపుడు", "spiciness": 0 },
+        { "name": "క్యారెట్ వేపుడు", "spiciness": 0 },
+        { "name": "గోబి మంచూరియా", "spiciness": 0 },
         { "name": "మిక్స్ వెజిటబుల్స్ వేపుడు", "spiciness": 0 }
       ]
     }
@@ -79,23 +91,33 @@
     "en": {
       "title": "Gravy Items",
       "items": [
-        { "name": "Paneer Butter Masala", "spiciness": 0 },
+        { "name": "Paneer curry", "spiciness": 0 },
+        { "name": "Palak Paneer curry", "spiciness": 0 },
         { "name": "Bagar vankaya", "spiciness": 0 },
-        { "name": "Tomato Cashew Drumstick", "spiciness": 0 },
-        { "name": "Chana Masala", "spiciness": 0 },
+        { "name": "Chole Masala", "spiciness": 0 },
         { "name": "Mixed vegetable", "spiciness": 0 },
-        { "name": "Potato kurma", "spiciness": 0 }
+        { "name": "Potato kurma", "spiciness": 0 },
+        { "name": "Tomato curry", "spiciness": 0 },
+        { "name": "Cabbage Tomato ChannaDal curry", "spiciness": 0 },
+        { "name": "Eggplant Potato Tomato curry", "spiciness": 0 },
+        { "name": "Chinese-okra Blackeye-bean Tomato curry", "spiciness": 0 },
+        { "name": "Sambar", "spiciness": 0 }
       ]
     },
     "te": {
-      "title": "పులుసులు",
+      "title": "ఇగుర్లు",
       "items": [
-        { "name": "పనీర్ బటర్ మసాలా", "spiciness": 0 },
+        { "name": "పనీర్ కూర", "spiciness": 0 },
+        { "name": "పాలక్ పన్నీర్ కూర", "spiciness": 0 },
         { "name": "బగార్ వంకాయ", "spiciness": 0 },
-        { "name": "టమాటో కాజూ ములకాయ", "spiciness": 0 },
-        { "name": "చనా మసాలా", "spiciness": 0 },
+        { "name": "చోలే మసాలా", "spiciness": 0 },
         { "name": "మిక్స్ వెజిటబుల్", "spiciness": 0 },
-        { "name": "బంగాళాదుంప కుర్మా", "spiciness": 0 }
+        { "name": "బంగాళాదుంప కుర్మా", "spiciness": 0 },
+        { "name": "టమాటో కూర", "spiciness": 0 },
+        { "name": "క్యాబేజీ టొమేటో శనగపప్పు కూర", "spiciness": 0 },
+        { "name": "వంకాయ బంగాళదుంప టొమేటో కూర", "spiciness": 0 },
+        { "name": "బీరకాయ అలసందలు టొమేటో కూర", "spiciness": 0 },
+        { "name": "సాంబార్", "spiciness": 0 }
       ]
     }
   },
@@ -106,10 +128,10 @@
         { "name": "Bobbatlu", "spiciness": 0 },
         { "name": "Bread sweet", "spiciness": 0 },
         { "name": "Carrot Halwa", "spiciness": 0 },
+        { "name": "Suji Halwa", "spiciness": 0 },
         { "name": "Gulab Jamoon", "spiciness": 0 },
-        { "name": "Badam Burfi", "spiciness": 0 },
         { "name": "Mysorepak", "spiciness": 0 },
-        { "name": "Kaju Katli", "spiciness": 0 }
+        { "name": "Poornam Boorelu", "spiciness": 0 }
       ]
     },
     "te": {
@@ -118,10 +140,10 @@
         { "name": "బొబ్బట్లు", "spiciness": 0 },
         { "name": "బ్రెడ్ హల్వా", "spiciness": 0 },
         { "name": "క్యారెట్ హల్వా", "spiciness": 0 },
+        { "name": "సూజీ హల్వా", "spiciness": 0 },
         { "name": "గులాబ్ జామూన్", "spiciness": 0 },
-        { "name": "బాదాం బర్ఫీ", "spiciness": 0 },
         { "name": "మైసూర్ పాక్", "spiciness": 0 },
-        { "name": "కాజూ కట్లీ", "spiciness": 0 }
+        { "name": "పూర్ణం బూరెలు", "spiciness": 0 }
       ]
     }
   },
