@@ -8,6 +8,9 @@ function loadLanguage(language) {
   });
 
   localStorage.setItem('selectedLanguage', language);
+
+  // Set the search input's placeholder text according to the selected language
+  setPlaceholderText(language);
 }
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -25,3 +28,4 @@ window.addEventListener('DOMContentLoaded', function() {
     console.error('Language dropdown not found!');
   }
 });
+ 

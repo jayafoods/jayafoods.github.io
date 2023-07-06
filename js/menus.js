@@ -2,6 +2,27 @@
 // Search functionality
 // ==========================
 
+const placeholders = {
+  en: "Search items...",
+  te: "శోధించండి..."
+};
+
+function setPlaceholderText(language) {
+  var searchInput = document.getElementById('search-input');
+  if (!searchInput) {
+    console.error('Search input not found!');
+    return;
+  }
+  
+  var placeholderText = placeholders[language] || placeholders['en'];
+  searchInput.setAttribute('placeholder', placeholderText);
+}
+
+function getSelectedLanguage() {
+  const languageDropdown = document.getElementById('language');
+  return languageDropdown ? languageDropdown.value : 'en';
+}
+
 // Define the input event listener as a named function
 function handleSearchInput() {
   let searchQuery = this.value.toLowerCase();
@@ -170,15 +191,11 @@ function toggleInShoppingList(item) {
 }
 
 function addToShoppingList(item) {
-  const index = shoppingList.indexOf(item);
-  if (index === -1) {
-    // If the item does not exist in the shopping list, add it
+  if (!shoppingList.includes(item)) {
     shoppingList.push(item);
+    displayShoppingList();
+    saveShoppingList();
   }
-
-  // Update the displayed shopping list
-  displayShoppingList();
-  saveShoppingList(); // save the shopping list after every change
 }
 
 function saveShoppingList() {
@@ -385,6 +402,7 @@ function loadLanguage(language) {
 
   loadTextMenu(language);
   loadMenuCards(language);
+  setPlaceholderText(language);
 }
 
 // Other language handling functions...
@@ -401,10 +419,11 @@ window.addEventListener('DOMContentLoaded', function() {
   if (languageDropdown) {
     languageDropdown.value = selectedLanguage;
     loadLanguage(selectedLanguage);
+    setPlaceholderText(getSelectedLanguage());
 
-    languageDropdown.onchange = function() {
+    languageDropdown.addEventListener('change', function() {
       loadLanguage(this.value);
-    };
+    });
 
     const copyButton = document.getElementById('copy-button');
     const clearButton = document.getElementById('clear-button');

@@ -51,3 +51,26 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+
+.tagline {
+  text-align: center;  
+}
+
+
+/* Search  */
+.search-items {
+  text-align: center;  
+}
+
+.search-bar {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+}
+
+#search-input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* The above search positions are adjusted in media.css file */

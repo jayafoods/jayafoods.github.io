@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/intro-pane.css">
   <link rel="stylesheet" href="css/shopping.css">
   <link rel="stylesheet" href="css/search-results.css">
-  <link rel="stylesheet" href="css/parent-container.css">
   <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
@@ -29,10 +28,6 @@
 
     <div class="right-menu"> 
       <div class="language-dropdown">
-        <label for="language">
-          <span class="localizable lang-en" lang="en">Language</span>
-          <span class="localizable lang-te" lang="te">భాష</span>:
-        </label>
         <select id="language" aria-label="Language selection">
           <option value="en">English</option>
           <option value="te">తెలుగు</option>
@@ -47,6 +42,19 @@
   <div class="container-logo">
     <div class="outer-circle"></div>
       <h1 class="logo">Jaya Foods</h1>
+  </div>
+
+  <div class="tagline">
+    <h3>
+      <span class="localizable lang-en" lang="en">Catering Delicious South Indian Food!</span>
+      <span class="localizable lang-te" lang="te">నోరూరించే దక్షిణ భారత వంటకాలు!</span>
+    </h3>
+  </div>
+
+  <div class="search-items">
+    <label>
+        <input type="text" id="search-input" placeholder="Search items...">
+    </label>      
   </div>
 
   <section class="shopping-list-container" id="shopping-list">
@@ -75,22 +83,6 @@
     </div>
   </section>
 
-  <div class="parent-container">
-    <div class="intro-pane intro-pane-container" id="intro-pane" role="main" aria-label="Introduction">
-      <h3>
-        <span class="localizable lang-en" lang="en">Catering Delicious South Indian Food!</span>
-        <span class="localizable lang-te" lang="te">నోరూరించే దక్షిణ భారత వంటకాలు!</span>
-      </h3>
-        <span class="localizable lang-en" lang="en">More <strong>details</strong> are coming <strong>soon!</strong></span><br>
-        <span class="localizable lang-te" lang="te">మరన్ని వివిరాలు <strong>త్వరలో</strong>!</span><br>
-      <div class="search-bar">
-        <label>
-            <span class="localizable lang-en" lang="en">Search items:</span>
-            <span class="localizable lang-te" lang="te">అంశాలను శోధించండి:</span>
-            <input type="text" id="search-input" placeholder="Search items...">
-        </label>      
-    </div>
-
     <div class="text-menu text-menu-container" id="text-menu" role="region" aria-label="Text-based Menu">
       <!-- Text based menu cards load here -->
     </div>
@@ -98,7 +90,6 @@
     <div class="main-pane main-pane-container" id="main-pane" role="main" aria-label="Menu Cards">  
       <!-- photo based menu cards load here -->    
     </div>
-  </div>
 
   <script src="js/menus.js"></script>
 </body>

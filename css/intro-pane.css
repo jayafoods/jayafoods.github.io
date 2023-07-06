@@ -1,16 +1,3 @@
-.search-bar {
-  position: absolute;
-  top: 150px;
-  right: 0px;
-}
-
-#search-input {
-  padding: 5px;
-  font-size: 16px;
-}
-
-/* The above search positions are adjusted in media.css file*/
-
 body #intro-pane.intro-pane-container {
   grid-template-columns: 1fr;
 }
