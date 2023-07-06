@@ -19,6 +19,10 @@ body {
   width: 100%;
   top: 0;
   z-index: 10;
+
+  display: flex;
+  justify-content: flex-start; /* aligns items to the start */
+  align-items: center; /* vertically aligns items in the center */
 }
 
 .top-bar h1 {
@@ -37,4 +41,21 @@ body {
 
 .top-bar .caption {
   font-weight: bold;
+}
+
+
+.right-menu {
+  margin-left: auto; /* pushes the .right-menu container to the right */
+  display: flex;
+  gap: 10px;
+}
+
+.help-button a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.help-button a:hover {
+  text-decoration: underline;
 }

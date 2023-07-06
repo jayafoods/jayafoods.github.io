@@ -8,10 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 
-  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
   <link rel="stylesheet" href="css/top-bar.css">
   <link rel="stylesheet" href="css/logo-pane.css">
-  <!-- <link rel="stylesheet" href="css/search-bar.css"> -->
   <link rel="stylesheet" href="css/text-menu.css">
   <link rel="stylesheet" href="css/photo-menu.css">
   <link rel="stylesheet" href="css/intro-pane.css">
@@ -29,15 +27,20 @@
       <a href="contact.html" class="localizable lang-te" lang="te" aria-label="సంప్రదింపు">సంప్రదింపు</a>
     </div>
 
-    <div class="language-dropdown">
-      <label for="language">
-        <span class="localizable lang-en" lang="en">Language</span>
-        <span class="localizable lang-te" lang="te">భాష</span>:
-      </label>
-      <select id="language" aria-label="Language selection">
-        <option value="en">English</option>
-        <option value="te">తెలుగు</option>
-      </select>
+    <div class="right-menu"> 
+      <div class="language-dropdown">
+        <label for="language">
+          <span class="localizable lang-en" lang="en">Language</span>
+          <span class="localizable lang-te" lang="te">భాష</span>:
+        </label>
+        <select id="language" aria-label="Language selection">
+          <option value="en">English</option>
+          <option value="te">తెలుగు</option>
+        </select>
+      </div>
+      <div class="help-button">
+        <a href="help.html" aria-label="Help">❓</a>
+      </div>
     </div>
   </div>
 
@@ -45,35 +48,34 @@
     <div class="outer-circle"></div>
       <h1 class="logo">Jaya Foods</h1>
   </div>
-  
-  <div class="shopping-list-container" id="shopping-list">
-    <div class="shopping-list-topbar">
+
+  <section class="shopping-list-container" id="shopping-list">
+    <header class="shopping-list-topbar">
       <h2 class="shopping-list-title">Shopping List</h2>
       <div class="toolbar">
         <button id="copy-button">Copy</button>
         <button id="clear-button">Clear</button>
       </div>
-    </div>
-    <div id="shopping-list-items"> <!-- New container for items -->
+    </header>
+    <div id="shopping-list-items">
       <ul></ul>
     </div>
-  </div>
+  </section>
 
-  <div class="search-results-container" id="search-results">
-    <div class="search-results-topbar">
+  <section class="search-results-container" id="search-results">
+    <header class="search-results-topbar">
       <h2 class="search-results-title">Search Results</h2>
       <div class="toolbar">
         <button id="copy-search-button">Copy</button>
         <button id="clear-search-button">Clear</button>
       </div>
-    </div>
+    </header>
     <div id="search-results-items">
       <!-- Search results will be appended here -->
     </div>
-  </div>
+  </section>
 
   <div class="parent-container">
-    <!-- <div class="intro-pane container" id="intro-pane" role="main" aria-label="Introduction"> -->
     <div class="intro-pane intro-pane-container" id="intro-pane" role="main" aria-label="Introduction">
       <h3>
         <span class="localizable lang-en" lang="en">Catering Delicious South Indian Food!</span>
@@ -81,17 +83,18 @@
       </h3>
         <span class="localizable lang-en" lang="en">More <strong>details</strong> are coming <strong>soon!</strong></span><br>
         <span class="localizable lang-te" lang="te">మరన్ని వివిరాలు <strong>త్వరలో</strong>!</span><br>
-        <div class="search-bar">
-            <br><br><input type="text" id="search-input" placeholder="Search items..."><br>
-        </div>      
+      <div class="search-bar">
+        <label>
+            <span class="localizable lang-en" lang="en">Search items:</span>
+            <span class="localizable lang-te" lang="te">అంశాలను శోధించండి:</span>
+            <input type="text" id="search-input" placeholder="Search items...">
+        </label>      
     </div>
 
-    <!-- <div class="text-menu container" id="text-menu" role="region" aria-label="Text-based Menu"> -->
     <div class="text-menu text-menu-container" id="text-menu" role="region" aria-label="Text-based Menu">
       <!-- Text based menu cards load here -->
     </div>
 
-    <!-- <div class="main-pane container" id="main-pane" role="main" aria-label="Menu Cards"> -->
     <div class="main-pane main-pane-container" id="main-pane" role="main" aria-label="Menu Cards">  
       <!-- photo based menu cards load here -->    
     </div>
