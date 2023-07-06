@@ -19,16 +19,6 @@ function handleSearchInput() {
 
   let hasResults = false; // Track if there are any search results
 
-  // items.forEach(function (item) {
-  //   let itemText = item.textContent.toLowerCase();
-  //   if (itemText.includes(searchQuery)) {
-  //     const listItem = document.createElement('li');
-  //     listItem.textContent = itemText.replace('➕', '');
-  //     searchResultsItemsContainer.appendChild(listItem);
-  //     hasResults = true;
-  //   }
-  // });
-
   items.forEach(function (item) {
     let itemText = item.textContent.toLowerCase();
     if (itemText.includes(searchQuery)) {
@@ -119,6 +109,9 @@ function adjustPaddingTop() {
 
 let shoppingList = [];
 
+// Load shopping list from localStorage on page load
+window.addEventListener('DOMContentLoaded', loadShoppingList);
+
 function copyToClipboard() {
   const copyText = shoppingList.map(item => `- ${item}`).join('\n');
   navigator.clipboard.writeText(copyText)
@@ -130,10 +123,14 @@ function copyToClipboard() {
     });
 }
 
+// Here, we connect the clearShoppingList function to a button.
+// Note: You have to set an ID of "clear-button" to the button in your HTML.
+document.getElementById('clear-button').addEventListener('click', clearShoppingList);
 function clearShoppingList() {
   shoppingList.length = 0; // This will clear the array
   displayShoppingList(); // Update the displayed shopping list
   hideShoppingList(); // Hide the shopping list
+  saveShoppingList(); // Save the shopping list to localStorage  
 }
 
 function showShoppingListContainer() {
@@ -152,7 +149,9 @@ function showShoppingList() {
 }
 
 function hideShoppingList() {
-  hideShoppingListContainer();
+  if (shoppingList.length === 0) { // Only hide if the list is empty
+    hideShoppingListContainer();
+  }
 }
 
 function toggleInShoppingList(item) {
@@ -167,6 +166,7 @@ function toggleInShoppingList(item) {
 
   // Update the displayed shopping list
   displayShoppingList();
+  saveShoppingList(); // Save the shopping list to localStorage
 }
 
 function addToShoppingList(item) {
@@ -178,16 +178,29 @@ function addToShoppingList(item) {
 
   // Update the displayed shopping list
   displayShoppingList();
+  saveShoppingList(); // save the shopping list after every change
 }
 
 function saveShoppingList() {
-  localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
+  try {
+    localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
+  } catch (e) {
+    console.error('Error saving to localStorage', e);
+  }
 }
 
 function loadShoppingList() {
   const savedList = localStorage.getItem('shoppingList');
   if (savedList) {
-    shoppingList = JSON.parse(savedList);
+    try {
+      shoppingList = JSON.parse(savedList);
+      if (shoppingList.length > 0) { // If there is data in the shopping list
+        displayShoppingList();
+        showShoppingListContainer(); // Show the shopping list
+      }
+    } catch (e) {
+      console.error("Error reading shopping list from localStorage:", e);
+    }
   }
 }
 
@@ -217,6 +230,7 @@ function displayShoppingList() {
       removeButton.style.color = "#dc3545";
       removeButton.onclick = () => {
         toggleInShoppingList(item);
+        saveShoppingList(); // Save the shopping list to localStorage
       };
 
       listItem.appendChild(removeButton);
