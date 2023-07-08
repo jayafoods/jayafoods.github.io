@@ -1,0 +1,18 @@
+.contact-info {
+  background-color: #333333; 
+  color: white;
+/*   font-family: 'Shadows Into Light', cursive; */
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  text-transform: none;
+  min-height: 80px;
+}
+
+.contact-info img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
