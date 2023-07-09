@@ -16,6 +16,7 @@ body {
 .container-logo h1 {
   margin: 0;
   font-family: "Times New Roman", sans-serif;
+  user-select: none;
 }
 
 .logo {

@@ -14,12 +14,13 @@ body {
 
 .cutting-board {
     position: relative;
-    width: 90%;
-    height: 90%;
+    width: 90vw;
+    height: 80vh;
     background: linear-gradient(45deg, #c0c0c0, #f0f0f0);
     border-radius: 2%;
     transform: rotateY(-5deg);
     box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+    margin-top: 40px; /* Add this line */
 }
 
 .cutting-board:after {
@@ -103,18 +104,20 @@ body {
     }    
 }
 
+
 .help-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateY(-5deg);
-    text-align: justify;
-    color: #000;
-    padding: 2em;
-    line-height: 1.6;
-    width: 70%;
-    height: 70%;
-    overflow-y: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateY(-5deg);
+  text-align: justify;
+  color: #000;
+  padding: 2em;
+  line-height: 1.6;
+  width: 70%;
+  height: 70%;
+  overflow-y: auto;
+  padding-bottom: 130px; /* Add this line */
 }
 
 .help-content h1 {
