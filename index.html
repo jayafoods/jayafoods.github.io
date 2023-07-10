@@ -26,13 +26,26 @@
 </head>
 <body>
   <div class="top-bar" role="navigation">
-    <div class="menu-options">
+    <div class="search-items">
+      <label>
+          <input type="text" id="search-input" placeholder="Search items...">
+      </label>      
+    </div>
+
+<!--
+     <div class="menu-options">
       <a href="index.html" class="localizable lang-en" lang="en" aria-label="Home">Home</a>
       <a href="index.html" class="localizable lang-te" lang="te" aria-label="ముఖ్య పేజీ">ముఖ్య పేజీ</a>
       <a href="contact.html" class="localizable lang-en" lang="en" aria-label="Contact">Contact</a>
       <a href="contact.html" class="localizable lang-te" lang="te" aria-label="సంప్రదింపు">సంప్రదింపు</a>
     </div>
-
+-->
+    </div>
+<!-- 
+    <div class="phone">
+      <img src="img/phone.png" alt="Phone">
+    </div>
+ -->
     <div class="right-menu"> 
       <div class="language-dropdown">
         <select id="language" aria-label="Language selection">
@@ -58,12 +71,6 @@
     </h3>
   </div>
 
-  <div class="search-items">
-    <label>
-        <input type="text" id="search-input" placeholder="Search items...">
-    </label>      
-  </div>
-
   <section class="shopping-list-container" id="shopping-list">
     <header class="shopping-list-topbar">
       <h2 class="shopping-list-title">Shopping List</h2>
@@ -86,7 +93,7 @@
       </div>
     </header>
     <div id="search-results-items">
-      <!-- Search results will be appended here -->
+      <!-- Search results load here -->
     </div>
   </section>
 

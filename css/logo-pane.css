@@ -54,24 +54,7 @@ body {
 }
 
 .tagline {
-  text-align: center;  
+  text-align: center;
+  margin-bottom: 30px;  
 }
 
-
-/* Search  */
-.search-items {
-  text-align: center;  
-}
-
-.search-bar {
-  position: absolute;
-  top: 150px;
-  right: 0px;
-}
-
-#search-input {
-  padding: 5px;
-  font-size: 16px;
-}
-
-/* The above search positions are adjusted in media.css file */
