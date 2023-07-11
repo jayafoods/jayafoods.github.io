@@ -64,7 +64,8 @@ body {
 #search-input {
   padding: 5px;
   font-size: 16px;
-  width: 124.5px;  /* Fixed width */
+/*   width: 124.5px; */
+  width: 105px;
 }
 
 .phone {
