@@ -1,7 +1,7 @@
 .contact-info {
   background-color: #333333; 
   color: white;
-/*   font-family: 'Shadows Into Light', cursive; */
+/*   font-family: 'Shadows Into Light', cursive, sans-serif; */
   font-size: 20px;
   padding: 20px;
   text-align: center;
@@ -12,19 +12,6 @@
 
 .contact-info img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
-}
-
-.phone {
-  display: flex;
-  justify-content: center;
-  width: 100%; /* This ensures the div takes up the full width of its container */
-}
-
-.phone img {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;

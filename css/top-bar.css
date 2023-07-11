@@ -12,16 +12,12 @@ body {
   background-color: #333333;
   color: white;
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Creates three "tracks" for items */
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
-
-  display: flex;
-  justify-content: flex-start; /* aligns items to the start */
   align-items: center; /* vertically aligns items in the center */
 }
 
@@ -43,31 +39,44 @@ body {
   font-weight: bold;
 }
 
-
+/* Language drop-down*/
 .right-menu {
-  margin-left: auto; /* pushes the .right-menu container to the right */
   display: flex;
   gap: 10px;
+  grid-column: 3;
 }
 
 .help-button a {
   color: white;
   text-decoration: none;
   font-size: 20px;
+  grid-column: 4;
 }
 
 .help-button a:hover {
   text-decoration: underline;
 }
 
-
 .search-bar {
-  position: relative;
-  right: 0px;
+  grid-column: 1;
 }
 
 #search-input {
   padding: 5px;
   font-size: 16px;
-  width: 50%;
+  width: 124.5px;  /* Fixed width */
 }
+
+.phone {
+  grid-column: 2; /* Places the phone in the middle track */
+  justify-self: center; /* Centers the phone within its track */
+  display: flex;
+  justify-content: center;
+  width: 200px; /* Actual width of the phone number image */
+}
+
+.phone img {
+  margin-left: auto;
+  margin-right: auto;
+}
+

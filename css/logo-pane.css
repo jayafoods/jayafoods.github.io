@@ -3,14 +3,13 @@ body {
 }
 
 .container-logo {
-  padding: 0px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  height: 5.625rem;  /* 90px */
+  padding-top: 5rem;  /* 80px */
+  padding-bottom: 5rem;  /* 80px */  
 }
 
 .container-logo h1 {
@@ -21,18 +20,19 @@ body {
 
 .logo {
   position: absolute;
-  width: 250px;
-  height:50px;
   background-color: #608B00;
-  padding: 20px 40px;
   border-radius: 50%;
-  top: 120px;
-  font-size: 40px;
+  width: 15.625rem;  /* 250px */
+  height: 3.125rem;  /* 50px */
+  padding: 1.25rem 2.5rem;  /* 20px 40px */
+  top: 7.5rem;  /* 120px */
+  font-size: 2.5rem;  /* 40px */
   font-weight: bold;
   color: white;
   text-transform: uppercase;
   text-align: center;
   transition: transform 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .logo:hover {
@@ -41,12 +41,12 @@ body {
 
 .outer-circle {
   position: absolute;
-  top: 90px;
-  width: 150px;
-  height: 150px;
+  top: 5.625rem;  /* 90px */
+  width: 9.375rem;  /* 150px */
+  height: 9.375rem;  /* 150px */
   border-radius: 50%;
   background-color: orange;
-  z-index: -1;
+  z-index: 1;
   text-align: center;
   grid-template-columns: repeat(1, 1fr);
   left: 50%;

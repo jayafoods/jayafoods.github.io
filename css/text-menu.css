@@ -1,5 +1,5 @@
 .text-menu {
-  margin-left: 5px; /* 240px */
+  margin-left: 5px;
   margin-right: 20px;
   column-gap: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -10,7 +10,6 @@
   align-self: stretch;
 
   min-height: 200px;
-/*   padding-bottom: 30px; */
   margin-bottom: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -31,7 +30,6 @@
   margin-bottom: 5px;
   line-height: 1.2;
   transition: transform 0.3s ease-in-out;
-/*   background-color: inherit; */
   transform: scale(1.1);
 /*   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */ /* This makes each item appear individually raised and gives the overall look of a window blinds but doesn't look pretty */
   width: calc(100% - 60px); /* Subtracting the left and right margins */

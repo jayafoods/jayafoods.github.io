@@ -16,9 +16,11 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 
 .hide {
   display: none;
 }
+ */
 
 .search-results-container {
 /*   background-color: rgba(245, 245, 220, 0.7); */
@@ -55,9 +57,29 @@
   transition: all 0.3s ease;
 }
 
+/* 
 .toolbar button:hover {
   background-color: #5a6268;
 }
+ */
+
+.toolbar button:hover,
+#search-results-items li button:hover {
+  background-color: var(--main-btn-hover-bg-color);
+}
+
+.toolbar button:active,
+#search-results-items li button:active {
+  transform: scale(0.95);
+}
+
+.toolbar button:focus,
+#search-results-items li button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* --- */
 
 #search-results-items {
   padding-top: 120px; /* Adjust this value to the height of the topbar + toolbar */

@@ -3,13 +3,14 @@
   grid-template-columns: repeat(1, 1fr);
 }
 
+/* Styles for devices with screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    /* Add styles specific to devices with screens smaller than 480px here */
+}
+
 /* For smaller devices, remove the left margin */
 @media only screen and (max-width: 768px) {
-/*
-  .text-menu {
-    margin-left: 5px;
-  }
-*/
+    /* Add styles specific to devices with max width 768px here */
 }
 
 @media only screen and (min-width: 769px) {
@@ -24,26 +25,16 @@
   .text-menu {
     max-width: 75%;
   }
-
-  .search-bar {
-    right: 400px;
-  }
 }
 
 @media print {
   .container-logo,
-  body #intro-pane.intro-pane,
+  #intro-pane,
   .main-pane,
   .intro-pane {
     margin-left: 0;
     margin-right: 0;
     padding-left: 0;
     padding-top: 0;
-  }
-
-  .outer-circle,
-  .text-menu,
-  .search-bar {
-    display: none;
   }
 }
