@@ -1,6 +1,33 @@
 {
   "Category1": {
     "en": {
+      "title": "Starters",
+      "items": [
+        { "name": "Garelu", "spiciness": 0 },
+        { "name": "Vadalu", "spiciness": 0 },
+        { "name": "Mirchi Bajji", "spiciness": 2 },
+        { "name": "Banana Bajji", "spiciness": 0 },
+        { "name": "Onion Pakoda", "spiciness": 0 },
+        { "name": "Samosa", "spiciness": 0 },
+        { "name": "Spring rolls", "spiciness": 0 }
+      ]
+    },
+    "te": {
+      "title": "అల్పాహారాలు",
+      "items": [
+        { "name": "గారెలు", "spiciness": 0 },
+        { "name": "వడలు", "spiciness": 0 },
+        { "name": "మిరపకాయ బజ్జి", "spiciness": 2 },
+        { "name": "అరటికాయ బజ్జి", "spiciness": 0 },
+        { "name": "ఉల్లిపాయ పకోడి", "spiciness": 0 },
+        { "name": "సమోసా", "spiciness": 0 },
+        { "name": "స్ప్రింగ్ రోల్స్", "spiciness": 0 }
+      ]
+    }
+  },
+
+  "Category2": {
+    "en": {
       "title": "Rice items",
       "items": [
         { "name": "Vegetable Biryani", "spiciness": 0 },
@@ -27,7 +54,8 @@
       ]
     }
   },
-  "Category2": {
+
+  "Category3": {
     "en": {
       "title": "Fry Items",
       "items": [
@@ -57,7 +85,8 @@
       ]
     }
   },
-  "Category3": {
+
+  "Category4": {
     "en": {
       "title": "Gravy Items",
       "items": [
@@ -91,7 +120,8 @@
       ]
     }
   },
-  "Category4": {
+  
+  "Category5": {
     "en": {
       "title": "Dhals",
       "items": [
@@ -116,8 +146,9 @@
         { "name": "దోసకాయ పప్పు", "spiciness": 0 }
       ]
     }
-  },  
-  "Category5": {
+  },
+
+  "Category6": {
     "en": {
       "title": "Chutneys",
       "items": [
@@ -139,51 +170,25 @@
       ]
     }
   },
-  "Category6": {
-    "en": {
-      "title": "Snacks",
-      "items": [
-        { "name": "Garelu", "spiciness": 0 },
-        { "name": "Vadalu", "spiciness": 0 },
-        { "name": "Mirchi Bajji", "spiciness": 1 },
-        { "name": "Banana Bajji", "spiciness": 0 },
-        { "name": "Cornflakes, Poha mixture", "spiciness": 0 },
-        { "name": "Boondi mixture", "spiciness": 0 },
-        { "name": "Onion Pakoda", "spiciness": 0 },
-        { "name": "Samosa", "spiciness": 0 },
-        { "name": "Spring rolls", "spiciness": 0 }
-      ]
-    },
-    "te": {
-      "title": "అల్పాహారాలు",
-      "items": [
-        { "name": "గారెలు", "spiciness": 0 },
-        { "name": "వడలు", "spiciness": 0 },
-        { "name": "మిరపకాయ బజ్జి", "spiciness": 1 },
-        { "name": "అరటికాయ బజ్జి", "spiciness": 0 },
-        { "name": "కార్న్ ఫ్లేక్స్, అటుకుల మిక్చర్", "spiciness": 0 },
-        { "name": "బూందీ మిక్చర్", "spiciness": 0 },
-        { "name": "ఉల్లిపాయ పకోడి", "spiciness": 0 },
-        { "name": "సమోసా", "spiciness": 0 },
-        { "name": "స్ప్రింగ్ రోల్స్", "spiciness": 0 }
-      ]
-    }
-  },
+
   "Category7": {
     "en": {
-      "title": "Sweets",
+      "title": "Sweets & Hots",
       "items": [
         { "name": "Bobbatlu", "spiciness": 0 },
-        { "name": "Bread sweet / double-ka-meetha", "spiciness": 0 },
+        { "name": "Bread sweet/Double-ka-meetha", "spiciness": 0 },
         { "name": "Carrot Halwa", "spiciness": 0 },
         { "name": "Suji Halwa", "spiciness": 0 },
         { "name": "Gulab Jamoon", "spiciness": 0 },
         { "name": "Mysorepak", "spiciness": 0 },
-        { "name": "Poornam Boorelu", "spiciness": 0 }
+        { "name": "Poornam Boorelu", "spiciness": 0 },
+
+        { "name": "Cornflakes, Poha mixture", "spiciness": 1 },
+        { "name": "Boondi mixture", "spiciness": 1 }
       ]
     },
     "te": {
-      "title": "మిఠాయిలు",
+      "title": "పిండివంటలు - తీపి & కారం",
       "items": [
         { "name": "బొబ్బట్లు", "spiciness": 0 },
         { "name": "బ్రెడ్ హల్వా / డబల్ కమీటా", "spiciness": 0 },
@@ -191,7 +196,10 @@
         { "name": "సూజీ హల్వా", "spiciness": 0 },
         { "name": "గులాబ్ జామూన్", "spiciness": 0 },
         { "name": "మైసూర్ పాక్", "spiciness": 0 },
-        { "name": "పూర్ణం బూరెలు", "spiciness": 0 }
+        { "name": "పూర్ణం బూరెలు", "spiciness": 0 },
+
+        { "name": "కార్న్ ఫ్లేక్స్, అటుకుల మిక్చర్", "spiciness": 1 },
+        { "name": "బూందీ మిక్చర్", "spiciness": 1 }
       ]
     }
   }

@@ -66,27 +66,27 @@
 }
 
 .text-menu .category.category-category1 {
-  background-image: linear-gradient(to top, rgba(238, 232, 170, 1), rgba(222, 184, 135, 1));
+  background-image: linear-gradient(to top, rgba(255, 215, 0, 1), rgba(255, 69, 0, 1));
 }
 
 .text-menu .category.category-category2 {
-  background-image: linear-gradient(to top, rgba(205, 133, 63, 1), rgba(160, 82, 45, 1));
+  background-image: linear-gradient(to top, rgba(238, 232, 170, 1), rgba(222, 184, 135, 1));
 }
 
 .text-menu .category.category-category3 {
-  background-image: linear-gradient(to top, rgba(255, 216, 92, 0.8), rgba(255, 101, 68, 1));
+  background-image: linear-gradient(to top, rgba(205, 133, 63, 1), rgba(160, 82, 45, 1));
 }
 
 .text-menu .category.category-category4 {
-  background-image: linear-gradient(to top, rgba(210, 105, 30, 1), rgba(139, 69, 19, 1));
+  background-image: linear-gradient(to top, rgba(255, 216, 92, 0.8), rgba(255, 101, 68, 1));
 }
 
 .text-menu .category.category-category5 {
-  background-image: linear-gradient(to top, rgba(50, 205, 50, 1), rgba(34, 139, 34, 1));
+  background-image: linear-gradient(to top, rgba(210, 105, 30, 1), rgba(139, 69, 19, 1));
 }
 
 .text-menu .category.category-category6 {
-  background-image: linear-gradient(to top, rgba(255, 215, 0, 1), rgba(255, 69, 0, 1));
+  background-image: linear-gradient(to top, rgba(50, 205, 50, 1), rgba(34, 139, 34, 1));
 }
 
 .text-menu .category.category-category7 {
